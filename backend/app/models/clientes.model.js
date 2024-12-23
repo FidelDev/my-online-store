@@ -1,3 +1,4 @@
+//#NOTA: model no usado las consultas fueron independiente al model.js
 module.exports = (sequelize, Sequelize) => {
     const clientes = sequelize.define('clientes', {
         idClientes: {
@@ -28,13 +29,3 @@ module.exports = (sequelize, Sequelize) => {
     
     return clientes;
 }
-
-/*
-table clientes
-    idClientes INT 
-    razon_social VARCHAR
-    nombre_comercial VARCHAR
-    direccion_entrega VARCHAR
-    telefono VARCHAR
-    email VARCHAR
-*/

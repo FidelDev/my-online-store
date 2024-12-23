@@ -1,3 +1,6 @@
+//#NOTA: los procesos de conexion a la base datos fueron en los arvicos .env, env.js y db.configs.js se omite este archivo --Dejo constar el proceso anterior
+
+
 //mandando parametros a la base de datos y comparando las credenciales correctas
 /* const dbconfig = require('../configs/db.config.js');
 
@@ -23,4 +26,3 @@ db.rol = require('./rol.model.js')(sequelize, Sequelize);
 
 module.exports = db; */
 
-//--Nuevo

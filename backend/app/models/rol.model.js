@@ -1,4 +1,5 @@
-//parametros correctos para las tablas de la base de datos
+//#NOTA: este archivo si se uso ya que para hacer constar el uso dependiente a modelo de parametros 
+
 module.exports = (sequelize, Sequelize) => {
     const Rol = sequelize.define("rol", {
         idrol: {
@@ -18,9 +19,3 @@ module.exports = (sequelize, Sequelize) => {
 
     return Rol;
 }
-
-/*
---table ROL
-idrol
-nombre
-*/

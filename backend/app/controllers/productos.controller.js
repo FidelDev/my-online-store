@@ -1,4 +1,5 @@
-//TRABAJANDO AUN EN PROGRESO
+//#NOTA: Trabajando en proceso.
+//Por cuestion de timepo estos endpoints esta proceso para realizar lo estare actaulizando en enseguida
 //Logica implementada para realizar peticiones a la base de datos:
 const {storage} = require('@google-cloud/storage');
 const db = require('../configs/db.config.js');

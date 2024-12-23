@@ -1,0 +1,20 @@
+--copiar las URL para realizar el test
+
+POST --ingresar un registro
+http://localhost:8080/api/estados/
+{
+  "nombre": "Nuevo Estado"
+}
+
+GET --obtener todos los estados
+http://localhost:8080/api/estados/allStates
+
+GET --obtener un estados por ID
+http://localhost:8080/api/estados/{id}
+
+PUT http://localhost:8080/api/estados/{idestados}
+{
+  "nombre": "Estado Actualizado"
+}
+
+DELETE  http://localhost:8080/api/estados/{id}

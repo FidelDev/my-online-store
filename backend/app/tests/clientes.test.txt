@@ -1,0 +1,30 @@
+--copiar las URLs para el test
+
+POST --insetar un registro
+http://localhost:8080/api/clientes/
+{
+  "razon_social": "Empresa Ejemplo S.A.",
+  "nombre_comercial": "Ejemplo Comercial",
+  "direccion_entrega": "Calle Ejemplo 123",
+  "telefono": "123456789",
+  "email": "contacto@gmail.com"
+}
+
+GET --obtener todos los registros
+http://localhost:8080/api/clientes/allClient
+
+GET --obtener un registro por ID
+http://localhost:8080/api/clientes/allById/{id}
+
+PUT --actualizar por id
+http://localhost:8080/api/clientes/update/{id}
+{
+  "razon_social": "Nueva Empresa Ejemplo S.A.",
+  "nombre_comercial": "Nuevo Ejemplo Comercial",
+  "direccion_entrega": "Nueva Calle Ejemplo 123",
+  "telefono": "987654321",
+  "email": "nuevocontacto@gmail.com"
+}
+
+DELETE --eliminar por id
+http://localhost:8080/api/clientes/delet/{id}

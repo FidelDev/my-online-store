@@ -1,0 +1,14 @@
+--copiar URL para realizar test. #Usuario Administrador tiene priviligios a  todos los endpoints
+
+POST: http://localhost:8080/api/auth/signin
+body:
+{
+  "correo_electronico": "fidelrosales339@gmail.com",
+  "password": "F1234"
+}
+
+--request
+{
+    "correo_electronico": "fidelrosales339@gmail.com",
+    "accessToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE3MzQ5MDM1NTQsImV4cCI6MTczNDkwMzY0MH0.yYhL1dma2cth8DKAOkXCJH0uoYBwa6P_TpGRss3B5Io"
+}

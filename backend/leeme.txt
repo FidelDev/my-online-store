@@ -1,0 +1,6 @@
+HOLA, cuando se esta revisando todo los archivos adjunte comentario que serviran para ver los procesos del funcionamiento de la api espero que lo lean.
+
+--Estare realizando commits conforme las necesidades a la ora implementar el lado frontend o y asea mejorar mas el lado backend
+
+
+--Reza a Diosito que funcione 🫠🙏

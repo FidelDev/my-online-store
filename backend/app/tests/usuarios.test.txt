@@ -1,0 +1,55 @@
+
+--npm install bcrypt //dependencias para manejar encryptacione de datos
+
+--copiar las URLs para el test
+
+POST --insetar un registro
+http://localhost:8080/api/usuarios/
+{
+  "rol_idrol": 1,
+  "estados_idestados": 1,
+  "correo_electronico": "usuario@gmail.com",
+  "nombre_completo": "Usuario Ejemplo",
+  "password": "Contraseña123!",
+  "telefono": "1234567890",
+  "fecha_nacimiento": "1990-01-01",
+  "clientes_idClientes": 1
+}
+
+GET --obtener un registro por ID
+http://localhost:8080/api/usuarios/allById/{id}
+
+PUT --actualizar por id
+http://localhost:8080/api/usuarios/update/{id}
+{
+    "idusuarios": 12,
+    "rol_idrol": 1,
+    "estados_idestados": 1,
+    "correo_electronico": "Juan1Izaguiree@gmail.com",
+    "nombre_completo": "Juan Lopez Izaguirre",
+    "password": "cambiar",
+    "telefono": "12345678",
+    "fecha_nacimiento": "1989-12-31",
+    "clientes_idclientes": 10
+}
+
+PUT --inactivar un usuario
+http://localhost:8080/api/usuarios/inactivate/{id}
+{
+  "estados_idestados": 2 
+}
+
+PUT --activar un usuario
+http://localhost:8080/api/usuarios/activate/{id}
+{
+  "estados_idestados": 1,
+  "password": "Activar123!"
+}
+
+DELETE --eliminar por id
+http://localhost:8080/api/usuarios/delete/{id}
+{
+    "id": 1,
+    "correo_electronico": "fidelrosales339@gmail.com",
+    "password":"F1234"
+}

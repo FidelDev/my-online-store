@@ -1,0 +1,18 @@
+--copiar URLs para realizar test validos
+
+POST
+URL: http://localhost:8080/api/rol/
+Body: {"nombre": "Nuevo Rol"}
+
+GET//Obtener todos los ROLES
+URL: http://localhost:8080/api/rol/AllRol
+
+GET//Obtener un ROL por ID
+URL: http://localhost:8080/api/rol/{id}
+
+PUT
+URL: http://localhost:8080/api/rol/{id}
+Body: {"nombre": "Rol Actualizado"}
+
+DELETE//Eliminar un ROL por id
+URL: http://localhost:8080/api/rol/{id}

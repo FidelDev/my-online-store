@@ -1,0 +1,38 @@
+--copiar las URLs para el test
+
+POST --insetar un registro
+http://localhost:8080/api/categoriaproductos/
+{
+  "usuarios_idusuarios": 1,
+  "nombre": "Electrónicos",
+  "estados_idestados": 1
+}
+
+GET --obtener todos los registros
+http://localhost:8080/api/categoriaproductos/findAll/
+
+GET --obtener un registro por ID
+http://localhost:8080/api/categoriaproductos/findById/{id}
+
+PUT --actualizar por id
+http://localhost:8080/api/categoriaproductos/update/{id}
+{
+  "usuarios_idusuarios": 1,
+  "nombre": "Electrónicos Actualizados",
+  "estados_idestados": 2
+}
+
+PUT --inactivar categoriaproductos
+http://localhost:8080/api/categoriaproductos/inactivate/{id}
+{
+  "estados_idestados": 2
+}
+
+PUT --activar categoriaproductos
+http://localhost:8080/api/categoriaproductos/activate/{id}
+{
+  "estados_idestados": 1
+}
+
+DELETE --eliminar por id
+http://localhost:8080/api/categoriaproductos/delete/{id}

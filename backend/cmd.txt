@@ -1,0 +1,8 @@
+--instalando dependencia de pg-postgres para el servidor
+npm init
+npm install express sequelize pg pg-hstore cors --save
+npm i
+npm install tedious --gestor de base de datos SQL 
+--JWT
+npm install express jsonwebtoken bcryptjs express-validator
+npm install dotenv cors --save

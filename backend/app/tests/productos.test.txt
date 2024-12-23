@@ -1,0 +1,47 @@
+--procedimiento almacenado PRODUCTOS
+--CREATE
+create procedure InsertarProducto
+    @CategoriaProductos_idCategoriaProductos int,
+    @usuarios_idusuarios int,
+    @nombre varchar(45),
+    @marca varchar(45),
+    @codigo varchar(45),
+    @stock float,
+    @estados_idestados int,
+    @precio float,
+    @foto varbinary(MAX) = NULL
+as
+begin
+    insert into PRODUCTOS (CategoriaProductos_idCategoriaProductos, usuarios_idusuarios, nombre, marca, codigo, stock, estados_idestados, precio, foto)
+    values (@CategoriaProductos_idCategoriaProductos, @usuarios_idusuarios, @nombre, @marca, @codigo, @stock, @estados_idestados, @precio, @foto);
+end;
+select * from PRODUCTOS
+--UPDATE
+create procedure ActualizarProducto
+    @idProductos int,
+    @CategoriaProductos_idCategoriaProductos int,
+    @usuarios_idusuarios int,
+    @nombre varchar(45),
+    @marca varchar(45),
+    @codigo varchar(45),
+    @stock float,
+    @estados_idestados int,
+    @precio float,
+    @foto varbinary(MAX) = NULL
+as
+begin
+    update PRODUCTOS
+    set CategoriaProductos_idCategoriaProductos = @CategoriaProductos_idCategoriaProductos,
+        usuarios_idusuarios = @usuarios_idusuarios,
+        nombre = @nombre,
+        marca = @marca,
+        codigo = @codigo,
+        stock = @stock,
+        estados_idestados = @estados_idestados,
+        precio = @precio,
+        foto = @foto
+    where idProductos = @idProductos;
+end;
+
+--copiar ls URLs para realizar test
+POST http://localhost:8080/api/productos/

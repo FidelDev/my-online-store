@@ -1,0 +1,40 @@
+--copiar las URLs para realizar un test.
+
+POST --insetar un nuevo registro
+http://localhost:8080/api/OrdenConDetalles/
+
+{
+  "usuarioId": 12,
+  "detalles": [
+    {
+      "productos_idproductos": 16,
+      "cantidad": 2,
+      "precio": 2.1,
+      "subtotal": 4.2
+    },
+    {
+      "productos_idproductos": 17,
+      "cantidad": 1,
+      "precio": 3.5,
+      "subtotal": 3.5
+    }
+  ]
+}
+
+PUT --actualizando un registro
+http://localhost:8080/api/OrdenConDetalles/updateById
+{
+  "idOrden": 1,
+  "usuarioId": 2,
+  "detalles": [
+    {
+      "productos_idproductos": 17,
+      "cantidad": 3,
+      "precio": 3.0,
+      "subtotal": 9.0
+    }
+  ]
+}
+
+GET --obteniendo una ORDEN con sus OrdenDetalles a travez del id.
+http://localhost:8080/api/OrdenConDetalles/findById/?

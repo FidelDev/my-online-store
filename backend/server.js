@@ -19,6 +19,7 @@ const estadosRoutes = require('./app/routes/estados.routes.js');
 const clientesRoutes = require('./app/routes/clientes.routes.js');
 const usuariosRoutes = require('./app/routes/usuarios.routes.js');
 const CatproRoutes = require('./app/routes/CategoriaProductos.routes.js');
+const OrdenConDetalles = require('./app/routes/OrdenConDetalles.routes.js');
 
 // Autenticación de la conexión a la base de datos
 db.sequelize.authenticate().then(() => {
@@ -34,6 +35,7 @@ app.use('/api/estados',estadosRoutes);
 app.use('/api/clientes',clientesRoutes);
 app.use('/api/usuarios', usuariosRoutes);
 app.use('/api/categoriaproductos', CatproRoutes);
+app.use('/api/OrdenConDetalles', OrdenConDetalles);
 
 // Manejador de errores
 app.use((err, req, res, next) => {
